@@ -1,5 +1,5 @@
 ogre-1-9:
   script:
-    - sudo OGRE_VERSION="1.9" tools/ci/before-install.sh
-    - sudo OGRE_VERSION="1.9" tools/ci/install.sh
-    - sudo OGRE_VERSION="1.9" tools/ci/build.sh
+    - OGRE_VERSION="1.9" sudo tools/ci/before-install.sh
+    - OGRE_VERSION="1.9" sudo tools/ci/install.sh
+    - OGRE_VERSION="1.9" sudo tools/ci/build.sh
