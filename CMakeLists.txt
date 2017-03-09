@@ -19,18 +19,13 @@ cmake_minimum_required(VERSION 2.6)
 set(APP "OgreApp")
  
 set(HDRS
-	./Diabro/Diabro/Player.h
-	./Diabro/Diabro/LevelManager.h
-	./Diabro/Diabro/GameManager.h
-	./Diabro/Diabro/CharacterStats.h
-	./Diabro/Diabro/BaseApplication.h
+	./src/BaseApplication.h
+	./src/TutorialApplication.h
 )
  
 set(SRCS
-	./Diabro/Diabro/Player.cpp
-	./Diabro/Diabro/LevelManager.cpp
-	./Diabro/Diabro/GameManager.cpp
-	./Diabro/Diabro/BaseApplication.cpp
+	./src/BaseApplication.cpp
+	./src/TutorialApplication.cpp
 )
  
 include("tools/cmake/common.cmake") 
