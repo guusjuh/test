@@ -1,3 +1,6 @@
+before_script:
+- chmod 777 builds/
+
 ogre-1-9:
   tags:
     - linux
