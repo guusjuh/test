@@ -1,10 +1,10 @@
 ogre-1-9:
+  tags:
+	- linux
   script:
     - OGRE_VERSION="1.9" sudo tools/ci/before-install.sh
     - OGRE_VERSION="1.9" sudo tools/ci/install.sh
     - OGRE_VERSION="1.9" sudo tools/ci/build.sh
-  tags:
-	- linux
 
 ogre-1-8:
   script:
