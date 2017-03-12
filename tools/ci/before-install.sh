@@ -35,7 +35,6 @@ else
         zlib1g-dev \
         libzzip-dev \
         libboost-all-dev \
-        nvidia-cg-toolkit \
         libpoco-dev \
         libtbb-dev \
         libtinyxml-dev \
