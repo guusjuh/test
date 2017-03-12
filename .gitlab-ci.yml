@@ -1,5 +1,5 @@
 before_script:
-- chmod 777 builds/
+- chmod 777 /tools/
 
 ogre-1-9:
   tags:
@@ -8,9 +8,3 @@ ogre-1-9:
     - tools/ci/before-install.sh
     - OGRE_VERSION="1.9" tools/ci/install.sh
     - OGRE_VERSION="1.9" tools/ci/build.sh
-
-ogre-1-8:
-  script:
-    - OGRE_VERSION="1.8" tools/ci/before-install.sh
-    - OGRE_VERSION="1.8" tools/ci/install.sh
-    - OGRE_VERSION="1.8" tools/ci/build.sh
