@@ -27,8 +27,6 @@ if [ -n "$(apt-cache search "$OGRE_DEB_PACKAGE")" ]; then
         "$OGRE_DEB_PACKAGE"
 else
     # libxrandr-dev is needed by Ubuntu 14.04
-	$SUDO sed -i "/^# deb.*multiverse/ s/^# //" /etc/apt/sources.list
-	$SUDO apt-get update
     $SUDO apt-get install -y \
         libcppunit-dev \
         libxaw7-dev \
