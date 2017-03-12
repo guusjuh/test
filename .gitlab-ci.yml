@@ -1,5 +1,5 @@
 before_script:
-- chmod 777 
+- chmod -R 777 *
 
 ogre-1-9:
   tags:
