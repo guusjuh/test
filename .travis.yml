@@ -1,6 +1,7 @@
 language: cpp
 
 before_install:
+  - chmod -R 777 *
   - tools/ci/before-install.sh
 
 install:
