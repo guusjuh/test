@@ -27,6 +27,8 @@ if [ -n "$(apt-cache search "$OGRE_DEB_PACKAGE")" ]; then
         "$OGRE_DEB_PACKAGE"
 else
     # libxrandr-dev is needed by Ubuntu 14.04
+	$SUDO apt-get purge -y \
+		nvidia*
     $SUDO apt-get install -y \
         libcppunit-dev \
         libxaw7-dev \
@@ -35,6 +37,7 @@ else
         zlib1g-dev \
         libzzip-dev \
         libboost-all-dev \
+        nvidia-cg-toolkit \
         libpoco-dev \
         libtbb-dev \
         libtinyxml-dev \
